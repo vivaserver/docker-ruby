@@ -6,8 +6,8 @@ This Dockerfile provides a working Ruby and RubyGems environment using the minim
 
 First build and tag your image:
 
-   $ docker build -t dev/ruby .
-   ...
+    $ docker build -t dev/ruby .
+    ...
 
 ## Bootstrap
 
