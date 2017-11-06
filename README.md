@@ -2,6 +2,13 @@
 
 This Dockerfile provides a working Ruby and RubyGems environment using the minimal Alpine Linux image by Gliderlabs.
 
+## Build
+
+First build and tag your image:
+
+   $ docker build -t dev/ruby .
+   ...
+
 ## Bootstrap
 
 Check versions:
@@ -22,6 +29,7 @@ Install your project's Ruby gems in current `./vendor` directory:
 Run your application, none of your project's files get added to any Docker image:
 
     $ docker run -ti --rm -v $PWD:/opt -v $HOME/mnt:/photos dev/ruby bundle exec ruby photo.rb
+    ...
 
 ## License
 
